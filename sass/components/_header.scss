@@ -1,8 +1,10 @@
 // header
 
+
 .header {
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 .header__container {
@@ -11,6 +13,7 @@
     width: 480px;
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
 }
 
 .logo__primary {
@@ -35,15 +38,139 @@
     color: #212121;
 }
 
+.page-header {
+    position: relative;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .nav {
     display: flex;
     align-items: center;
+
+    
 }
 
 .nav__button {
-    display:block;
-    margin-left: auto;
-    padding: 0;
-    height: 42px;
-    width: 42px;
+display: block;
+margin-left: auto;
+padding: 0;
+background-color: transparent;
+border: none;
+}
+
+.nav__button .nav__close {
+    display: none;
+}
+
+.nav__button .nav__close {
+    display: none;
+
+}
+
+
+.nav__button.is-open .nav__close {
+    display: block;
+    
+}
+
+.nav__button.is-open .nav__open {
+    display: none;
+}
+
+
+.menu-container {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 480px;
+    height: 796px;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+}
+
+.menu-container.is-open {
+    display: block;
+}
+
+
+.nav__list {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.nav__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    
+    color: #212121;
+}
+
+.nav__item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.contact__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+.contact__list {
+    margin-top: 290px;
+    margin-bottom: 64px;
+}
+
+.contact__item {
+    height: 16px;
+    margin-left: 40px;
+}
+
+.contact__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.contact__svg {
+    display: none;
+}
+
+
+.socials__list {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 64px;
+}
+
+.socials__link {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
 }
