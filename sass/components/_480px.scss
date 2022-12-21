@@ -46,11 +46,11 @@
         margin-right: auto;
     }
 
+
+
     .nav {
         display: flex;
         align-items: center;
-
-
     }
 
     .nav__button {
@@ -63,6 +63,7 @@
 
 
     }
+
 
     .nav__button .nav__close {
         display: none;
@@ -92,21 +93,19 @@
         height: 796px;
         z-index: 1;
         left: 0;
-        top: 100%;
+        top: 0;
         text-align: left;
-
+        padding-top: 40px;
+        padding-left: 40px;
 
     }
+
 
     .menu-container.is-open {
         display: block;
+
     }
 
-
-    .nav__list {
-        margin-left: 40px;
-        margin-top: 40px;
-    }
 
     .nav__link {
         font-family: 'Roboto';
@@ -127,6 +126,8 @@
         margin-bottom: 35px;
     }
 
+
+
     .contact__link {
         font-family: 'Roboto';
         font-style: normal;
@@ -144,13 +145,11 @@
     }
 
     .contact__list {
-        margin-top: 290px;
         margin-bottom: 64px;
     }
 
     .contact__item {
         height: 16px;
-        margin-left: 40px;
     }
 
     .contact__item:not(:last-child) {
@@ -164,7 +163,6 @@
 
     .socials__list {
         display: flex;
-        margin-left: 40px;
         margin-top: 64px;
     }
 
@@ -198,20 +196,22 @@
     }
 
 
-        .hero__backgroung1 {
-            position: absolute;
-                top: 0;
-                z-index: -1;
-                width: 1600px;
-        }
+    .hero__backgroung1 {
+        position: absolute;
+        z-index: -1;
+        max-width: 1600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     
-        .hero__backgroung2 {
-            display: none;
-        }
+    .hero__backgroung2 {
+        display: none;
+    }
     
-        .hero__backgroung3 {
-            display: none;
-        }
+    .hero__backgroung3 {
+        display: none;
+    }
 
     .hero__container {
         margin-left: auto;
